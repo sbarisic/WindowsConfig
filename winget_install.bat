@@ -30,3 +30,8 @@ winget install -e --id ShareX.ShareX
 winget install -e --id Discord.Discord
 winget install -e --id Logitech.GHUB
 winget install -e --id BaldurKarlsson.RenderDoc
+
+echo Copying local settings for programs
+REM Settings
+taskkill /im sharex.exe /f
+robocopy "./Sharex" "%userprofile%/Documents/ShareX" /is /it
