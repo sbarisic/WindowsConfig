@@ -16,6 +16,7 @@ explorer.exe
 
 echo Installing programs
 REM Programs
+winget install --exact --id MartiCliment.UniGetUI --source winget
 winget install -e --id 7zip.7zip
 winget install -e --id Notepad++.Notepad++
 winget install -e --id Mozilla.Firefox
@@ -39,3 +40,4 @@ echo Copying local settings for programs
 REM Settings
 taskkill /im sharex.exe /f
 robocopy "./MyDocuments/Sharex" "%userprofile%/Documents/ShareX" /is /it
+
