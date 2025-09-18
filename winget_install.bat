@@ -12,7 +12,7 @@ echo Installing explorer patcher
 REM Explorer patcher
 winget install -e --id valinet.ExplorerPatcher
 taskkill /im explorer.exe /f
-explorer.exe
+start explorer.exe
 
 echo Installing programs
 REM Programs
@@ -35,6 +35,7 @@ winget install -e --id Modrinth.ModrinthApp
 winget install -e --id Rakuten.Viber
 winget install -e --id Valve.Steam
 winget install -e --id Microsoft.VisualStudio.2022.Community
+winget install paint.net
 
 echo Copying local settings for programs
 REM Settings
